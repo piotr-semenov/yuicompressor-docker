@@ -10,7 +10,7 @@ Just add the following alias to your .bashrc (or .bash_profile in OSX):
 alias yuicompressor='docker run --rm -v `pwd`:/workdir -w /workdir semenovp/tiny-yuicompressor:latest'
 ```
 
-It repeats the [original usage](yui.github.io/yuicompressor/index.html#using).
+It repeats the [original usage](https://yui.github.io/yuicompressor/index.html#using).
 
 For example, do like this:
 
