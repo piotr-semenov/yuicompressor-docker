@@ -33,7 +33,7 @@ Note, the original [openjdk:alpine](https://hub.docker.com/_/openjdk) is of 69.4
 | REPOSITORY | YYYY-MM-DD | COMPRESSED / UNCOMPRESSED SIZE |
 |:-----------|:----------:|:------------------------------:|
 | **[semenovp/tiny-yuicompressor:latest](https://hub.docker.com/r/semenovp/tiny-yuicompressor/)** | 2020-12-02 | **47.38MB / 63.7MB** |
-| [fr3nd/yuicompressor:latest](https://hub.docker.com/r/fr3nd/yuicompressor/) | 2018-09-09 | 433.67MB / 891MB |
-| [ruudk/yuicompressor:latest](https://hub.docker.com/r/ruudk/yuicompressor/) | 2014-05-12 |  157.73MB / 453MB|
 | [nullmem/yuicompressor:latest](https://hub.docker.com/r/nullmem/yuicompressor/) | 2020-02-05 | 55.08MB / 83.8MB |
 | [lapsatech/yuicompressor:latest](https://hub.docker.com/r/lifeofguenter/yuicompressor/) | 2018-09-02 | 119.18MB / 312MB |
+| [ruudk/yuicompressor:latest](https://hub.docker.com/r/ruudk/yuicompressor/) | 2014-05-12 |  157.73MB / 453MB|
+| [fr3nd/yuicompressor:latest](https://hub.docker.com/r/fr3nd/yuicompressor/) | 2018-09-09 | 433.67MB / 891MB |
