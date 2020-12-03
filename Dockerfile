@@ -16,13 +16,13 @@ RUN apk add --virtual .envsubst gettext libintl &&\
 RUN ln -sf $JAVA_HOME/jre/bin/java /usr/bin/java
 
 RUN chmod +x /tmp/reduce_alpine.sh &&\
-    /tmp/reduce_alpine.sh /target find ls ln cat ash sh env busybox java\
-                                  "$JAVA_HOME/jre/lib/amd64/libjava.so"\
-                                  "$JAVA_HOME/jre/lib/amd64/server/libjvm.so"\
-                                  "$JAVA_HOME/jre/lib/amd64/libzip.so"\
-                                  \
-                                  "$(find $JAVA_HOME/jre/lib | grep -v amd64)"\
-                                  /var/opt/*
+    /tmp/reduce_alpine.sh -v /target java\
+                                     "$JAVA_HOME/jre/lib/amd64/libjava.so"\
+                                     "$JAVA_HOME/jre/lib/amd64/server/libjvm.so"\
+                                     "$JAVA_HOME/jre/lib/amd64/libzip.so"\
+                                     \
+                                     "$(find $JAVA_HOME/jre/lib | grep -v amd64)"\
+                                     /var/opt/*
 
 COPY docker-entrypoint.sh /target/usr/local/bin/
 RUN chmod +x /target/usr/local/bin/docker-entrypoint.sh
