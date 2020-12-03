@@ -17,7 +17,7 @@ For example, do like this:
 ```bash
 yuicompressor --type js -o output.js input.js
 
-yuicompressor --type js -o output.css input.css
+yuicompressor --type css -o output.css input.css
 ```
 
 # How to build on your own?
