@@ -21,7 +21,8 @@ RUN chmod +x /tmp/reduce_alpine.sh &&\
                                      "$JAVA_HOME/jre/lib/amd64/server/libjvm.so"\
                                      "$JAVA_HOME/jre/lib/amd64/libzip.so"\
                                      \
-                                     "$(find $JAVA_HOME/jre/lib | grep -v amd64)"\
+                                     "$JAVA_HOME/jre/lib/amd64/jvm.cfg"\
+                                     "$JAVA_HOME/jre/lib/rt.jar"\
                                      /var/opt/*
 
 COPY docker-entrypoint.sh /target/usr/local/bin/
