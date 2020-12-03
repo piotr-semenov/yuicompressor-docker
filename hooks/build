@@ -3,4 +3,4 @@
 set -e
 
 docker build --build-arg vcsref="$(git rev-parse --short HEAD)" \
-             -t $IMAGE_NAME .
+             -t "$IMAGE_NAME" .
