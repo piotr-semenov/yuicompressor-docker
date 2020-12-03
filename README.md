@@ -22,7 +22,7 @@ yuicompressor --type css -o output.css input.css
 
 # How to build on your own?
 ```bash
-docker build -t semenovp/tiny-yuicompressor:latest .
+docker build --build-arg vcsref="$(git rev-parse --short HEAD)" -t semenovp/tiny-yuicompressor:latest .
 ```
 
 # List of `yuicompressor` images

@@ -29,10 +29,14 @@ RUN chmod +x /target/usr/local/bin/docker-entrypoint.sh
 
 
 FROM scratch
+
+ARG vcsref
 LABEL \
     stage=production \
     org.label-schema.name="tiny-yuicompressor" \
     org.label-schema.description="Minify your Javascript/CSS." \
+    org.label-schema.url="https://hub.docker.com/r/semenovp/tiny-yuicompressor/" \
+    org.label-schema.vcs-ref="$vcsref" \
     org.label-schema.vcs-url="https://github.com/piotr-semenov/yuicompressor-docker.git" \
     maintainer='Piotr Semenov <piotr.k.semenov@gmail.com>'
 
